@@ -1,5 +1,5 @@
 <?php
-    $pageTitle = "Add Manage";
+    $pageTitle = " Manage Post";
 ?>
 
 <h1 class="mt-4"><?php echo $pageTitle;?></h1>
