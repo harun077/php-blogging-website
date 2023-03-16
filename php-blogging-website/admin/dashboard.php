@@ -1,5 +1,5 @@
 <?php
 
-   $view =  $_SESSION['master'] = "dashboard";
+   $view = "dashboard";
     include("master_template.php");
 ?>

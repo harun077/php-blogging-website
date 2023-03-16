@@ -9,6 +9,7 @@
             define("DBNAME","blog");
 
            $this->con = new Mysqli(HOSTNAME,USERNAME,PASSWORD,DBNAME);
+           
         }
     }
 ?>

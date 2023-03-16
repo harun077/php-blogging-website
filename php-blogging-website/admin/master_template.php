@@ -3,6 +3,20 @@
     include("classes/Users.php");
 
     $user = new Users();
+
+   // If Not 
+    $email = $_SESSION['admin_email'];
+    if(!$email){
+        header("location: index.php");
+    }
+    
+    // For Logout
+    if(isset($_GET['admin_logout'])){
+        if($_GET['admin_logout']== "logout"){
+            session_destroy();
+            header("Location: index.php");
+        }
+    }
 ?>
 
 
@@ -29,7 +43,7 @@
                         
                     <!--  Loading Require Page View -->
                         <?php
-                            if(isset($_SESSION['master'])){
+                            if(isset($view)){
 
                                 if($view == "add_category"){
                                     require("views/add_cat_view.php");

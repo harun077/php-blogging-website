@@ -1,5 +1,5 @@
 <?php
 
-   $view =  $_SESSION['master'] = "manage_category";
+   $view = "manage_category";
     include("master_template.php");
 ?>

@@ -1,5 +1,5 @@
 <?php
 
-   $view =  $_SESSION['master'] = "manage_post";
+   $view = "manage_post";
     include("master_template.php");
 ?>

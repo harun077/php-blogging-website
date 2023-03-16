@@ -1,3 +1,18 @@
+<?php 
+    include("classes/Users.php");
+    $user = new Users();
+
+    if(isset($_POST['admin_login'])){
+        $user->users_login($_POST);
+    }
+    
+    // For Redirect to Dashboard if have email address
+    if(isset($_SESSION['admin_login'])){
+        header("location: dashboard.php");
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,13 +35,32 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5 p-4">
                                     <div class="card-header bg-primary text-light"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form>
+
+                                        <!-- Display Message -->
+                                        <?php 
+                                            if(isset($_SESSION['msg'])){?>
+
+
+
+                                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                 <strong>Error!</strong> <?php echo $_SESSION['msg'];?>
+                                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>
+
+                                               
+                                            <?php
+                                               
+
+                                            }
+                                        ?>
+
+                                        <form action="" method="POST">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                                                <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             <div class="form-check mb-3">
@@ -35,7 +69,8 @@
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
+                                                <input type="submit" value="Login" name="admin_login" class="btn btn-primary">
+                                               
                                             </div>
                                         </form>
                                     </div>
