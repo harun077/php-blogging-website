@@ -23,15 +23,15 @@
             <?php 
              if(isset($_SESSION['msg'])){?>
 
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                     <strong>Success!</strong> <?php echo $_SESSION['msg'];?>
-                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
+             <div class="alert alert-success alert-dismissible fade show" role="alert">
+               <strong>Success!</strong> <?php echo $_SESSION['msg'];?>
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>
 
-                <?php
+            <?php
                                           
-                 }
-             ?>
+             }
+            ?>
             <!-- Form Start -->
             <form action="" method="POST" class="mt-3 shadow p-4 rounded">
                 <div class="form-group mb-3">
