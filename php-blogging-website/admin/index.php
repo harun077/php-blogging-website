@@ -37,7 +37,7 @@
                                     <div class="card-body">
 
                                         <!-- Display Message -->
-                                        <?php 
+                                        <!-- <?php 
                                             if(isset($_SESSION['msg'])){?>
 
                                              <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -48,7 +48,7 @@
                                             <?php
                                           
                                             }
-                                        ?>
+                                        ?> -->
 
                                         <form action="" method="POST">
                                             <div class="form-floating mb-3">

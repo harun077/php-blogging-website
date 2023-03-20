@@ -24,10 +24,10 @@
         // Delete Category
         public function delete_cat($cid){
          $result = $this->con->query("DELETE FROM `tbl_categories` WHERE `cat_id`='$cid'");
-         if($result){
-              $_SESSION['msg'] = "Category Delete Successfully";
-              //header("Location: manage_category.php");
-         }
+        //  if($result){
+        //       $_SESSION['msg'] = "Category Delete Successfully";
+        //       //header("Location: manage_category.php");
+        //  }
 
         }
     }
