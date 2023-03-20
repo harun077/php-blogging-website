@@ -8,6 +8,7 @@
     $post =  new Posts();
 
     if(isset($_POST['add_post'])){
+       
         $post->add_post($_POST); 
      
     }
@@ -51,7 +52,7 @@
                             if(mysqli_num_rows($getcat)>0){
                                foreach ($getcat as $catItem) {?>
                               
-                              <option value=""><?php echo $catItem['cat_name'];?></option>
+                              <option value="<?php echo $catItem['cat_name'];?>"><?php echo $catItem['cat_name'];?></option>
                               <?php
                                } 
                             }
@@ -65,7 +66,7 @@
 
                 <div class="form-group mb-3">
                     <label for="post_status" class="mb-2">Post Status</label>
-                    <select name="post_cat" id="post_cat" class="form-control">
+                    <select name="post_status" id="post_status" class="form-control">
                     <option value="">----Select Status----</option>
                         <option value="0">Published</option>
                         <option value="1">Unpublished</option>
