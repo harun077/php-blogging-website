@@ -1,3 +1,8 @@
+
+<?php
+
+?>
+
 <header class="">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -10,20 +15,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog Entries</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="post-details.html">Post Details</a>
-                    </li>
+
+                    <?php
+                       $getcat = $cat->display_cat();
+
+                       if(mysqli_num_rows($getcat)>0){
+                            foreach($getcat as $catItem){?>
+
+                            <li class="nav-item">
+                                <a class="nav-link  text-black px-4" href="admin/index.php"><?php echo $catItem['cat_name'];?></a>
+                            </li>
+                            <?php
+
+                            }
+                       }
+                    ?>
                     <li class="nav-item main-button">
                         <a class="nav-link  text-white px-4" href="admin/index.php">Login</a>
                     </li>

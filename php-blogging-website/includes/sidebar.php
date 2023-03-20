@@ -6,8 +6,6 @@
         <?php include_once("includes/categories.php");?>
         <?php include_once("includes/tagclouds.php");?>
 
-            
-            
         </div>
     </div>
 </div>

@@ -1,3 +1,10 @@
+<?php 
+    include_once("admin/config/Config.php");
+    include_once("admin/classes/Categories.php");
+    $cat = new Categories();
+?>
+
+
 <?php include_once("includes/header.php");?>
 
   <body>

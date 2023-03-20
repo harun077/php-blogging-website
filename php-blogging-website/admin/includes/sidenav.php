@@ -21,7 +21,7 @@
                             </div>
                            
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#post" aria-expanded="false" aria-controls="post">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-signs-post"></i></div>
                                 Posts
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -31,6 +31,11 @@
                                     <a class="nav-link" href="manage_post.php">Manage Post</a>
                                 </nav>
                             </div>
+                            <a class="nav-link collapsed" href="?admin_logout=logout" aria-expanded="false">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+                                Logout
+                                
+                            </a>
                            
                         </div>
                     </div>
