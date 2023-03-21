@@ -13,9 +13,9 @@
              $postSummery = $data['post_summery'];
              $postStatus = $data['post_status'];
 
-           $sql = "INSERT INTO `posts`(`post_title`, `post_content`, `post_img`, `post_cat`, `post_user`, `post_summary`, `post_date`, `post_status`) VALUES ('$postTitle','$postContent','$postimgName',' $postTmpimgName',' $postCat','$postSummery',now(), '$postStatus')";
+           $sql = "INSERT INTO `posts`(`post_title`, `post_content`, `post_img`, `post_cat`, `post_user`, `post_summary`, `post_date`, `post_status`) VALUES ('$postTitle','$postContent','$postimgName','$postTmpimgName',' $postCat','$postSummery',now(), '$postStatus') ";
 
-          $result = $this->con->query($sql);
+           $result = $this->con->query($sql);
 
           if($result){
             move_uploaded_file($postTmpimgName, "../upload/".$postimgName);

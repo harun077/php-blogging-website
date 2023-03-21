@@ -1,7 +1,9 @@
 <?php 
     include_once("admin/config/Config.php");
     include_once("admin/classes/Categories.php");
+    include_once("admin/classes/posts.php");
     $cat = new Categories();
+    $post = new posts();
 ?>
 
 

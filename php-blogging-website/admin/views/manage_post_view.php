@@ -62,7 +62,17 @@
                                        <img src="../upload/<?php echo $postItem['post_img'];?> " alt="" width="100px" height="100px">
                                     </td>
                                     <td><?php echo $postItem['post_summary'];?></td>
-                                    <td><?php echo $postItem['post_date'];?></td>
+                                    <td>
+                                        <?php 
+                                            if($postItem['post_status']== 1){
+                                                echo "Published";
+                                            }else{
+                                                echo "unpublished";
+                                            }
+
+                                        ?>
+                                    </td>
+                                    
                                     <td>
                                         <a href="" class="btn btn-sm btn-danger">Delete</a>
                                     </td>
