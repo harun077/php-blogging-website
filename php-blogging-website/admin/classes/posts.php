@@ -21,6 +21,11 @@
             move_uploaded_file($postTmpimgName, "../upload/".$postimgName);
           }
         }
+
+        // Display Post
+        public function display_post(){
+           return $this->con->query("SELECT * FROM `posts`");
+        }
        
     }
 
