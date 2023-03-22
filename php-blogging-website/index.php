@@ -6,18 +6,15 @@
     $post = new posts();
 ?>
 
-
 <?php include_once("includes/header.php");?>
 
   <body>
-
     <!--  Preloader Start  -->
     <?php include_once("includes/preloader.php");?>
     <!--  Preloader End -->
 
     <!-- Header Nav-->
     <?php include_once("includes/navbar.php");?>
-
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
@@ -26,7 +23,6 @@
 
   <!-- Call to action CTA -->
   <?php include_once("includes/cta.php");?>
-
 
     <section class="blog-posts">
       <div class="container">
@@ -37,7 +33,6 @@
       </div>
     </section>
 
-    
    <!-- Footer -->
    <?php include_once("includes/footer.php");?>
 

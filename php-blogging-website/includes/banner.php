@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="owl-banner owl-carousel">
             <div class="item">
-            <img src="assets/images/banner-item-07.jpg" alt="" height="550px" width="400px">
+            <img src="assets/images/banner-item-2.jpg" alt="" height="550px" width="400px">
                 <div class="item-content">
                     <div class="main-content">
                         <div class="meta-category">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="assets/images/banner-item-09.jpg" alt="" height="550px" width="400px">
+                <img src="assets/images/banner-item-2.jpg" alt="" height="550px" width="400px">
                 <div class="item-content">
                     <div class="main-content">
                         <div class="meta-category">
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="item">
-            <img src="assets/images/banner-item-09.jpg" alt="" height="550px" width="400px">
+            <img src="assets/images/banner-item-2.jpg" alt="" height="550px" width="400px">
                 <div class="item-content">
                     <div class="main-content">
                         <div class="meta-category">

@@ -7,19 +7,18 @@
             <ul>
 
             <?php
-                       $getcat = $cat->display_cat();
+                    $getcat = $cat->display_cat();
 
-                       if(mysqli_num_rows($getcat)>0){
-                            foreach($getcat as $catItem){?>
+                    if(mysqli_num_rows($getcat)>0){
+                        foreach($getcat as $catItem){?>
 
-                            <li><a href="#">- <?php echo $catItem ['cat_name']; ?></a></li>
+                        <li><a href="#">- <?php echo $catItem ['cat_name']; ?></a></li>
 
-                            <?php
+                        <?php
 
-                            }
-                       }
+                        }
+                    }
                     ?>
-
             </ul>
         </div>
     </div>

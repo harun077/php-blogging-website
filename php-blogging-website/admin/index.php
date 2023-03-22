@@ -36,20 +36,6 @@
                                     <div class="card-header bg-primary text-light"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
 
-                                        <!-- Display Message -->
-                                        <!-- <?php 
-                                            if(isset($_SESSION['msg'])){?>
-
-                                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                                 <strong>Error!</strong> <?php echo $_SESSION['msg'];?>
-                                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                            </div>
-
-                                            <?php
-                                          
-                                            }
-                                        ?> -->
-
                                         <form action="" method="POST">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />

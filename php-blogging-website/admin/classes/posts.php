@@ -1,7 +1,5 @@
 <?php
     class Posts extends Config{
-
-       
         // Add Post
         public function add_post($data){
           
